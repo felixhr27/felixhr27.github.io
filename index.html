@@ -64,7 +64,30 @@ Profitieren Sie von meinem direkten Draht zu vielen Sparkassen, BW Bank, L-Bank 
 
 <div class="check">
 <input type="checkbox" id="ds" required>
-<label for="ds">Ich akzeptiere die <a href="datenschutz.html" style="color:#E2001A;text-decoration:underline;">Datenschutzerklärung</a> *</label>
+<label for="ds">Ich akzeptiere die <a href="datenschutz.html" ;text-decoration:underline;">Datenschutzerklärung</a> *</label>
+.check {
+display: flex;
+align-items: flex-start; 
+gap: 10px; 
+font-size: 0.95rem;
+margin: 20px 0;
+}
+
+.check input[type="checkbox"] {
+margin-top: 0.2em;
+flex-shrink: 0; 
+}
+
+.check label {
+display: inline; 
+line-height: 1.4; 
+cursor: pointer; 
+}
+
+.check label a {
+color: #E2001A;
+text-decoration: underline;
+}
 </div>
 
 <button type="submit">Kostenlos Anfrage</button>
