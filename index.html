@@ -3,41 +3,90 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Datenschutzerklärung</title>
+<title>Felix Hänßler-Rott – Ihr Baufinanzierungs-Experte der LBS Süd</title>
 <style>
-body{font-family:system-ui,sans-serif;background:#fff;color:#333;line-height:1.7;padding:20px;max-width:480px;margin:0 auto}
-h1{color:#E2001A;text-align:center;padding:20px 0}
-h2{color:#E2001A;margin:30px 0 15px}
-a{color:#E2001A}
-.back{display:block;text-align:center;margin:40px 0;font-weight:bold;font-size:1.1rem}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:#fff;color:#333;line-height:1.5}
+.c{max-width:480px;margin:0 auto}
+header{background:#E2001A;color:#fff;padding:25px 15px;text-align:center}
+h1{font-size:1.9rem}
+.sub{font-size:1.1rem;margin-top:8px;opacity:.95}
+main{padding:30px 20px}
+.box{background:#E2001A;color:#fff;padding:20px;border-radius:12px;text-align:center;font-weight:bold;font-size:1.2rem;margin-bottom:25px}
+h2{color:#E2001A;font-size:1.5rem;margin:35px 0 20px;text-align:center}
+input,textarea{width:100%;padding:14px;margin:8px 0;border:2px solid #ddd;border-radius:8px;font-size:1rem}
+input:focus,textarea:focus{border-color:#E2001A;outline:none}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:.95rem;margin:20px 0}
+button{background:#E2001A;color:#fff;border:none;padding:16px;width:100%;border-radius:8px;font-size:1.3rem;cursor:pointer}
+.partner{background:#f8f8f8;padding:20px;border-radius:12px;text-align:center;margin:30px 0}
+.partner strong{font-size:1.1rem;display:block;margin-bottom:12px}
+.partner a{display:block;color:#E2001A;font-weight:bold;font-size:1.1rem;margin:10px 0;text-decoration:underline}
+footer{background:#4D4F53;color:#fff;padding:20px;text-align:center;font-size:.9rem}
+footer a{color:#fff;text-decoration:underline;margin:0 10px}
+.wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:36px;box-shadow:0 4px 15px rgba(0,0,0,.3);z-index:999;text-decoration:none}
+.bar{position:fixed;bottom:94px;left:0;width:100%;background:rgba(0,0,0,.85);color:#fff;padding:12px;text-align:center;font-size:1rem;z-index:998}
+.bar a{color:#fff;margin:0 15px;text-decoration:none}
 </style>
 </head>
 <body>
-<h1>Datenschutzerklärung</h1>
-<p><strong>Verantwortlicher:</strong><br>
-Felix Hänßler-Rott<br>
-72762 Reutlingen<br>
-Telefon: 01516 2703591<br>
-E-Mail: info@meine-baufi.com</p>
+<div class="c">
+<header>
+<h1>Felix Hänßler-Rott</h1>
+<div class="sub">Ihr Baufi-Profi bei der LBS Süd</div>
+</header>
 
-<h2>1. Datenverarbeitung</h2>
-<p>Beim Absenden des Formulars werden nur die von Ihnen eingegebenen Daten (Name, Telefon, E-Mail, Exposé-Link, Nachricht) verarbeitet – ausschließlich zur Bearbeitung Ihrer Baufinanzierungs-Anfrage.</p>
+<main>
+<div class="box">
+Direkter Draht zu vielen Sparkassen, der L-Bank & der KfW<br>
+<strong>Beste Konditionen und passende Finanzierungsangebote für Ihre Immobilie!</strong>
+</div>
 
-<h2>2. Weitergabe</h2>
-<p>Ihre Daten werden nur weitergegeben an:<br>
-• LBS Landesbausparkasse Süd<br>
-• ggf. L-Bank und KfW zur Prüfung von Fördermitteln<br>
-Keine Weitergabe an sonstige Dritte.</p>
+<h2>Jetzt kostenlosen Beratungstermin anfragen!</h2>
 
-<h2>3. Speicherdauer</h2>
-<p>Die Daten werden gelöscht, sobald sie nicht mehr benötigt werden – spätestens 6 Monate nach letztem Kontakt.</p>
+<form action="https://formsubmit.co/info@meine-baufi.com" method="POST">
+<input type="text" name="name" placeholder="Name *" required>
+<input type="tel" name="telefon" placeholder="Telefon *" required>
+<input type="email" name="email" placeholder="E-Mail *" required>
+<input type="url" name="expose" placeholder="Exposé-Link (optional)">
+<textarea name="nachricht" rows="3" placeholder="Ihre Nachricht (optional)"></textarea>
 
-<h2>4. Ihre Rechte</h2>
-<p>Auskunft • Berichtigung • Löschung • Widerruf<br>
-Einfach per E-Mail oder Telefon bei mir melden.</p>
+<input type="hidden" name="_subject" value="Neue Baufi-Anfrage!">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="danke.html">
+<input type="hidden" name="_captcha" value="false">
 
-<p>Stand: 08.11.2025</p>
+<div class="check">
+<input type="checkbox" id="ds" required>
+<label for="ds">Ich akzeptiere die <a href="datenschutz.html" style="color:#E2001A;text-decoration:underline;">Datenschutzerklärung</a> *</label>
+</div>
 
-<a href="index.html" class="back">← Zurück zur Startseite</a>
+<button type="submit">Kostenloses Angebot →</button>
+</form>
+
+<!-- PARTNER JETZT HIER UNTEN -->
+<div class="partner">
+<strong>Meine starken Partner:</strong>
+<a href="https://www.lbs-sued.de" target="_blank">LBS Landesbausparkasse Süd</a>
+<a href="https://www.l-bank.de" target="_blank">L-Bank Baden-Württemberg</a>
+<a href="https://www.kfw.de" target="_blank">KfW Bankengruppe</a>
+</div>
+</main>
+
+<footer>
+<a href="impressum.html">Impressum</a> |
+<a href="datenschutz.html">Datenschutz</a>
+<p style="margin-top:12px;font-size:.8rem;opacity:.8">
+§ 34i GewO – Darlehensvermittler im Auftrag der LBS Süd<br>
+Registernr. D-W-209-3QJ-63
+</p>
+</footer>
+</div>
+
+<a href="https://wa.me/4915162703591?text=Hallo%20Felix,%20ich%20brauche%20ein%20Baufi-Angebot!" class="wa" target="_blank">WhatsApp</a>
+
+<div class="bar">
+<a href="tel:015162703591">01516 2703591</a> |
+<a href="mailto:info@meine-baufi.com">E-Mail</a>
+</div>
 </body>
 </html>
