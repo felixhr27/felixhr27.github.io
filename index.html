@@ -3,187 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Felix Hänßler-Rott – Ihre Baufinanzierung</title>
-<meta name="description" content="Passende Finanzierungs-Konzepte für Ihr Familien-Zuhause. Persönlich. Fair. Vor Ort.">
-
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-
+<title>Felix Hänßler-Rott – Baufi-Experte LBS Süd</title>
 <style>
-:root{--blau:#1a3d7c;--rot:#e63946;--hell:#f8f9fa;--dunkel:#212529;}
-body{font-family:'Roboto',sans-serif;line-height:1.7;color:#333;background:#fff;}
-h1,h2,h3,h4{font-family:'Playfair Display',serif;color:var(--blau);}
-
-/* Perfekt für Daumen */
-.navbar-brand{font-size:1.4rem !important;}
-.nav-link{font-size:1.15rem;padding:0.9rem 1.2rem !important;}
-.btn{font-size:1.2rem !important;padding:1rem 2rem !important;border-radius:50px !important;}
-.hero{
-background:linear-gradient(rgba(26,61,124,0.88),rgba(26,61,124,0.88)),
-url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
-padding:150px 0 110px;color:white;text-align:center;
-}
-.hero h1{font-size:2.5rem;line-height:1.2;}
-.hero .lead{font-size:1.3rem;}
-.section-padding{padding:80px 0;}
-.card{border:none;border-radius:20px;box-shadow:0 12px 35px rgba(0,0,0,0.1);transition:0.3s;}
-.card:hover{transform:translateY(-12px);}
-.familie-badge{background:var(--rot);color:white;padding:10px 20px;border-radius:50px;font-weight:600;}
-.team-img{width:190px;height:190px;border-radius:50%;border:8px solid white;box-shadow:0 15px 40px rgba(0,0,0,0.25);}
-
-@media (max-width:768px){
-.hero h1{font-size:2.1rem;}
-.hero .lead{font-size:1.2rem;}
-.btn{padding:1.1rem 2.2rem !important;font-size:1.3rem !important;margin:0.6rem 0 !important;}
-.section-padding{padding:60px 0;}
-.nav-link{font-size:1.4rem !important;padding:1.2rem !important;}
-}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:system-ui,sans-serif; background:#fff; color:#333; line-height:1.5; }
+.c { max-width:480px; margin:0 auto; }
+header { background:#E2001A; color:#fff; padding:25px 15px; text-align:center; }
+h1 { font-size:1.9rem; }
+.sub { font-size:1.1rem; margin-top:8px; opacity:0.95; }
+main { padding:30px 20px; }
+.box { background:#E2001A; color:#fff; padding:20px; border-radius:12px; text-align:center; font-weight:bold; font-size:1.2rem; margin-bottom:25px; }
+.partner { background:#f8f8f8; padding:20px; border-radius:12px; text-align:center; margin:25px 0; }
+.partner a { display:block; color:#E2001A; font-weight:bold; font-size:1.1rem; margin:12px 0; text-decoration:underline; }
+h2 { color:#E2001A; font-size:1.5rem; margin:35px 0 20px; text-align:center; }
+input, textarea { width:100%; padding:14px; margin:8px 0; border:2px solid #ddd; border-radius:8px; font-size:1rem; }
+input:focus, textarea:focus { border-color:#E2001A; outline:none; }
+.check { display:flex; gap:10px; align-items:flex-start; font-size:0.95rem; margin:20px 0; }
+button { background:#E2001A; color:#fff; border:none; padding:16px; width:100%; border-radius:8px; font-size:1.3rem; cursor:pointer; }
+footer { background:#4D4F53; color:#fff; padding:20px; text-align:center; font-size:0.9rem; }
+footer a { color:#fff; text-decoration:underline; }
+.wa { position:fixed; bottom:20px; right:20px; background:#25D366; color:#fff; width:64px; height:64px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:36px; box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:999; }
+.bar { position:fixed; bottom:94px; left:0; width:100%; background:rgba(0,0,0,0.85); color:#fff; padding:12px; text-align:center; font-size:1rem; z-index:998; }
+.bar a { color:#fff; margin:0 12px; }
 </style>
 </head>
 <body>
+<div class="c">
+<header>
+<h1>Felix Hänßler-Rott</h1>
+<div class="sub">Ihr Baufi-Profi bei der LBS Süd</div>
+</header>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
-<div class="container">
-<a class="navbar-brand fw-bold text-primary" href="#">Felix Hänßler-Rott</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="nav">
-<ul class="navbar-nav ms-auto mt-3 mt-lg-0">
-<li class="nav-item"><a class="nav-link" href="#leistungen">Leistungen</a></li>
-<li class="nav-item"><a class="nav-link" href="#familie">Für Familien</a></li>
-<li class="nav-item"><a class="nav-link" href="#ueber">Über mich</a></li>
-<li class="nav-item"><a class="nav-link btn btn-danger text-white px-4" href="#termin">Termin buchen</a></li>
-</ul>
+<main>
+<div class="box">
+Direkter Draht zu Sparkassen, L-Bank & KfW<br>
+<strong>Beste Konditionen für Ihre Immobilie!</strong>
 </div>
-</div>
-</nav>
 
-<!-- Hero -->
-<section class="hero">
-<div class="container">
-<h1>Ihr Familien-Zuhause<br>ist mein Herzensprojekt</h1>
-<p class="lead mb-4">Seit über 20 Jahren begleite ich Familien in ihr neues Zuhause – mit den besten Zinsen und 100 % Sicherheit.</p>
-<div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
-<a href="#termin" class="btn btn-danger btn-lg"> In 57 Sekunden Termin</a>
-<a href="tel:+497112345678" class="btn btn-outline-light btn-lg"> 0711 12345678</a>
+<div class="partner">
+<strong>Meine Partner:</strong><br>
+<a href="https://www.lbs-sued.de" target="_blank">LBS Süd</a>
+<a href="https://www.l-bank.de" target="_blank">L-Bank</a>
+<a href="https://www.kfw.de" target="_blank">KfW</a>
 </div>
-<div class="mt-4">
-<span class="familie-badge">Über 1.500 glückliche Familien</span>
-</div>
-</div>
-</section>
 
-<!-- Leistungen -->
-<section id="leistungen" class="section-padding bg-light">
-<div class="container">
-<h2 class="text-center mb-5">Alles für Ihre Familie</h2>
-<div class="row g-4 text-center">
-<div class="col-md-4">
-<div class="card p-4 h-100">
-<i class="fas fa-home fa-3x text-primary mb-3"></i>
-<h4>Traumhaus finanzieren</h4>
-<p>Die besten Zinsen aus über 430 Banken – immer passend zu Ihrem Leben.</p>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card p-4 h-100">
-<i class="fas fa-heart fa-3x text-primary mb-3"></i>
-<h4>Familien-Sicherheit</h4>
-<p>Planbar über 20–30 Jahre. Sondertilgungen bei Geburt oder Erbe inklusive.</p>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card p-4 h-100">
-<i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
-<h4>Rundum geschützt</h4>
-<p>Perfekter Schutz für Sie und Ihre Liebsten – genau richtig dosiert.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
+<h2>Jetzt Angebot anfordern!</h2>
 
-<!-- Für Familien -->
-<section id="familie" class="section-padding">
-<div class="container">
-<div class="row align-items-center">
-<div class="col-lg-6 mb-5">
-<h2 class="mb-4">Familien liegen mir am Herzen</h2>
-<p class="lead">Ob erstes Kind, größerer Garten oder Platz für Oma – ich kenne jede Situation und finde die perfekte Lösung.</p>
-<div class="mt-4">
-<p class="mb-3"><i class="fas fa-check text-success me-3"></i> Bis 42.000 € Zuschüsse clever kombiniert</p>
-<p class="mb-3"><i class="fas fa-check text-success me-3"></i> Extra lange Zinsbindung für ruhige Nächte</p>
-<p class="mb-3"><i class="fas fa-check text-success me-3"></i> Kostenlose Sondertilgung bei Familienzuwachs</p>
-<p class="mb-3"><i class="fas fa-check text-success me-3"></i> Immer ein fester Ansprechpartner – auch nach 10 Jahren</p>
-</div>
-<a href="#termin" class="btn btn-danger btn-lg mt-4">Jetzt Familien-Beratung starten</a>
-</div>
-<div class="col-lg-6 text-center">
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Glückliche Familie" class="img-fluid rounded shadow-lg">
-</div>
-</div>
-</div>
-</section>
+<form action="https://formspree.io/f/myzdjpjw" method="POST">
+<input type="text" name="name" placeholder="Name *" required>
+<input type="tel" name="telefon" placeholder="Telefon *" required>
+<input type="email" name="email" placeholder="E-Mail *" required>
+<input type="url" name="expose" placeholder="Exposé-Link (optional)">
+<textarea name="nachricht" rows="3" placeholder="Ihre Nachricht (optional)"></textarea>
 
-<!-- Über mich -->
-<section id="ueber" class="section-padding bg-light">
-<div class="container">
-<div class="row align-items-center">
-<div class="col-md-4 text-center mb-4">
-<img src="https://via.placeholder.com/300x300/1a3d7c/ffffff?text=Ihr+Foto" alt="Felix Hänßler-Rott" class="team-img">
+<div class="check">
+<input type="checkbox" id="ds" required>
+<label for="ds">Ich akzeptiere die <a href="datenschutz.html" style="color:#E2001A;">Datenschutzerklärung</a> *</label>
 </div>
-<div class="col-md-8">
-<h2>Felix Hänßler-Rott</h2>
-<h4 class="text-primary">Ihr Familien-Finanzierer aus Leidenschaft</h4>
-<p class="lead">Seit 2003 mache ich Familien glücklich – mit ehrlicher Beratung, den besten Konditionen und ganz viel Herz.</p>
-<p>Ich arbeite nicht für die Bank. Ich arbeite für SIE und Ihre Kinder.</p>
-<p class="mt-4 fs-5 fst-italic text-muted">„Ein zufriedenes Lächeln beim Schlüssel-Übergeben – das ist mein schönster Lohn.“</p>
-</div>
-</div>
-</div>
-</section>
 
-<!-- Termin -->
-<section id="termin" class="section-padding bg-primary text-white">
-<div class="container text-center">
-<h2 class="mb-4">In 57 Sekunden zu Ihrem Wunschtermin</h2>
-<p class="lead mb-5">Kostenlos • Unverbindlich • Auch abends & samstags</p>
-
-<div class="calendly-inline-widget" data-url="https://calendly.com/DEIN-CALENDLY-LINK" style="min-height:680px;border-radius:20px;overflow:hidden;"></div>
-
-<div class="mt-5">
-<p class="fs-4 mb-4">Oder direkt schreiben:</p>
-<form action="https://formspree.io/f/xyz" method="POST" class="row g-3 justify-content-center">
-<div class="col-md-5"><input type="text" name="name" class="form-control form-control-lg" placeholder="Ihr Name" required></div>
-<div class="col-md-5"><input type="tel" name="phone" class="form-control form-control-lg" placeholder="Telefon" required></div>
-<div class="col-12"><button type="submit" class="btn btn-danger btn-lg px-5"> Nachricht senden</button></div>
+<button type="submit">Kostenloses Angebot →</button>
 </form>
-</div>
-</div>
-</section>
+</main>
 
-<!-- Footer -->
-<footer class="bg-dark text-white py-5">
-<div class="container text-center">
-<p class="mb-2"><i class="fas fa-phone"></i> 0711 12345678</p>
-<p class="mb-2"><i class="fas fa-envelope"></i> info@felix-haenssler-rott.de</p>
-<p class="mb-0 mt-4">© 2025 Felix Hänßler-Rott – Ihr Familien-Finanzierer</p>
-</div>
+<footer>
+<a href="impressum.html">Impressum</a> |
+<a href="datenschutz.html">Datenschutz</a>
+<p style="margin-top:12px; font-size:0.8rem; opacity:0.8;">
+§ 34i GewO – Darlehensvermittler im Auftrag der LBS Süd<br>
+Registernr. D-W-209-3QJ-63
+</p>
 </footer>
+</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://assets.calendly.com/assets/external/widget.js"></script>
-<script>
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-a.addEventListener('click', e => {
-e.preventDefault();
-document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
-});
-});
-</script>
+<a href="https://wa.me/4915162703591?text=Hallo%20Felix,%20ich%20brauche%20ein%20Baufi-Angebot!" class="wa" target="_blank">WhatsApp</a>
+
+<div class="bar">
+<a href="tel:015162703591">01516 2703591</a> |
+<a href="mailto:info@meine-baufi.com">E-Mail</a>
+</div>
 </body>
 </html>
