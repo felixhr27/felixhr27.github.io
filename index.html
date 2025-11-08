@@ -3,45 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Felix Hänßler-Rott – Ihr Baufinanzierungs-Experte der LBS Süd</title>
+<title>Felix Hänßler-Rott – Baufi-Experte LBS Süd</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:system-ui,sans-serif;background:#fff;color:#333;line-height:1.5}
 .c{max-width:480px;margin:0 auto}
-header{background:#E2001A;color:#fff;padding:25px 15px;text-align:center}
-h1{font-size:1.9rem}
+header{background:#E2001A;color:#fff;padding:90px 15px 30px;text-align:center;position:relative}
+h1{font-size:1.9rem;margin-top:15px}
 .sub{font-size:1.1rem;margin-top:8px;opacity:.95}
-main{padding:30px 20px}
-.box{background:#E2001A;color:#fff;padding:20px;border-radius:12px;text-align:center;font-weight:bold;font-size:1.2rem;margin-bottom:25px}
-h2{color:#E2001A;font-size:1.5rem;margin:35px 0 20px;text-align:center}
-input,textarea{width:100%;padding:14px;margin:8px 0;border:2px solid #ddd;border-radius:8px;font-size:1rem}
+.foto{
+width:150px;height:150px;border-radius:50%;border:7px solid #fff;
+box-shadow:0 8px 25px rgba(0,0,0,0.3);position:absolute;top:-75px;left:50%;transform:translateX(-50%);
+background:url('felix.jpg') center/cover no-repeat;
+}
+main{padding:20px 20px 30px}
+.box{background:#E2001A;color:#fff;padding:22px;border-radius:14px;text-align:center;font-weight:bold;font-size:1.25rem;margin-bottom:25px}
+h2{color:#E2001A;font-size:1.55rem;margin:35px 0 20px;text-align:center}
+input,textarea{width:100%;padding:15px;margin:8px 0;border:2px solid #ddd;border-radius:8px;font-size:1rem}
 input:focus,textarea:focus{border-color:#E2001A;outline:none}
 .check{display:flex;gap:10px;align-items:flex-start;font-size:.95rem;margin:20px 0}
-button{background:#E2001A;color:#fff;border:none;padding:16px;width:100%;border-radius:8px;font-size:1.3rem;cursor:pointer}
-.partner{background:#f8f8f8;padding:20px;border-radius:12px;text-align:center;margin:30px 0}
-.partner strong{font-size:1.1rem;display:block;margin-bottom:12px}
-.partner a{display:block;color:#E2001A;font-weight:bold;font-size:1.1rem;margin:10px 0;text-decoration:underline}
-footer{background:#4D4F53;color:#fff;padding:20px;text-align:center;font-size:.9rem}
-footer a{color:#fff;text-decoration:underline;margin:0 10px}
-.wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:36px;box-shadow:0 4px 15px rgba(0,0,0,.3);z-index:999;text-decoration:none}
-.bar{position:fixed;bottom:94px;left:0;width:100%;background:rgba(0,0,0,.85);color:#fff;padding:12px;text-align:center;font-size:1rem;z-index:998}
-.bar a{color:#fff;margin:0 15px;text-decoration:none}
+button{background:#E2001A;color:#fff;border:none;padding:17px;width:100%;border-radius:8px;font-size:1.35rem;cursor:pointer}
+.partner{background:#f8f8f8;padding:22px;border-radius:14px;text-align:center;margin:35px 0}
+.partner strong{font-size:1.15rem;display:block;margin-bottom:14px}
+.partner a{display:block;color:#E2001A;font-weight:bold;font-size:1.1rem;margin:11px 0;text-decoration:underline}
+footer{background:#4D4F53;color:#fff;padding:22px;text-align:center;font-size:.9rem}
+footer a{color:#fff;text-decoration:underline;margin:0 12px}
+.wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:66px;height:66px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:38px;box-shadow:0 4px 15px rgba(0,0,0,.3);z-index:999;text-decoration:none}
+.bar{position:fixed;bottom:96px;left:0;width:100%;background:rgba(0,0,0,.88);color:#fff;padding:13px;text-align:center;font-size:1rem;z-index:998}
+.bar a{color:#fff;margin:0 16px;text-decoration:none}
 </style>
 </head>
 <body>
 <div class="c">
 <header>
+<div class="foto"></div>
 <h1>Felix Hänßler-Rott</h1>
 <div class="sub">Ihr Baufi-Profi bei der LBS Süd</div>
 </header>
 
 <main>
-<div class="box">
-Direkter Draht zu vielen Sparkassen, der L-Bank & der KfW<br>
-<strong>Beste Konditionen und passende Finanzierungsangebote für Ihre Immobilie!</strong>
+<div class=" Firmware">
+Direkter Draht zu Sparkassen, L-Bank & KfW<br>
+<strong>Beste Konditionen für Ihre Immobilie!</strong>
 </div>
 
-<h2>Jetzt kostenlosen Beratungstermin anfragen!</h2>
+<h2>Jetzt Angebot anfordern!</h2>
 
 <form action="https://formsubmit.co/info@meine-baufi.com" method="POST">
 <input type="text" name="name" placeholder="Name *" required>
@@ -60,10 +66,9 @@ Direkter Draht zu vielen Sparkassen, der L-Bank & der KfW<br>
 <label for="ds">Ich akzeptiere die <a href="datenschutz.html" style="color:#E2001A;text-decoration:underline;">Datenschutzerklärung</a> *</label>
 </div>
 
-<button type="submit">Kostenloses Angebot →</button>
+<button type="submit">Kostenloses Angebot</button>
 </form>
 
-<!-- PARTNER JETZT HIER UNTEN -->
 <div class="partner">
 <strong>Meine starken Partner:</strong>
 <a href="https://www.lbs-sued.de" target="_blank">LBS Landesbausparkasse Süd</a>
