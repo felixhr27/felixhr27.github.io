@@ -32,7 +32,76 @@ footer a{color:#fff;text-decoration:underline;margin:0 12px}
 .wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:66px;height:66px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:38px;box-shadow:0 4px 15px rgba(0,0,0,.3);z-index:999;text-decoration:none}
 .bar{position:fixed;bottom:96px;left:0;width:100%;background:rgba(0,0,0,.88);color:#fff;padding:13px;text-align:center;font-size:1rem;z-index:998}
 .bar a{color:#fff;margin:0 16px;text-decoration:none}
+
+.contact-form input,
+.contact-form textarea {
+width: 100%;
+padding: 15px;
+margin: 8px 0;
+border: 2px solid #ddd;
+border-radius: 8px;
+font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+border-color: #E2001A;
+outline: none;
+}
+
+.check {
+display: flex;
+align-items: flex-start;
+gap: 10px;
+margin: 20px 0;
+font-size: 0.95rem;
+flex-wrap: nowrap;
+}
+
+.check input[type="checkbox"] {
+flex-shrink: 0;
+margin-top: 0.25em;
+}
+
+.check label {
+display: inline-block;
+line-height: 1.4;
+cursor: pointer;
+min-width: 0;
+word-break: break-word;
+}
+
+.check label a {
+color: #E2001A;
+text-decoration: underline;
+}
+
+.contact-form button {
+background: #E2001A;
+color: #fff;
+border: none;
+padding: 17px;
+width: 100%;
+border-radius: 8px;
+font-size: 1.35rem;
+cursor: pointer;
+}
+
+.contact-form button:hover {
+opacity: 0.9;
+}
+
+@media (max-width: 400px) {
+.check {
+flex-direction: column;
+align-items: flex-start;
+}
+.check input[type="checkbox"] {
+margin-top: 0;
+}
+}
 </style>
+  
 </head>
 <body>
 <div class="c">
@@ -49,7 +118,6 @@ Profitieren Sie von meinem direkten Draht zu vielen Sparkassen, BW Bank, L-Bank 
 </div>
 
 <h2>Jetzt persönlichen Beratungstermin anfragen!</h2>
-
 <form action="https://formsubmit.co/info@meine-baufi.com" method="POST" class="contact-form">
 <input type="text" name="name" placeholder="Name *" required>
 <input type="tel" name="telefon" placeholder="Telefon *" required>
@@ -57,11 +125,13 @@ Profitieren Sie von meinem direkten Draht zu vielen Sparkassen, BW Bank, L-Bank 
 <input type="url" name="expose" placeholder="Exposé-Link (optional)">
 <textarea name="nachricht" rows="3" placeholder="Ihre Nachricht / wichtige Infos (optional)"></textarea>
 
+<!-- Hidden-Felder für Formsubmit -->
 <input type="hidden" name="_subject" value="Neue Baufi-Anfrage! www.meine-baufi.com">
 <input type="hidden" name="_template" value="table">
 <input type="hidden" name="_next" value="https://www.meine-baufi.com/danke.html">
 <input type="hidden" name="_captcha" value="false">
 
+<!-- Checkbox + Text -->
 <div class="check">
 <input type="checkbox" id="ds" required>
 <label for="ds">
@@ -69,8 +139,10 @@ Ich akzeptiere die <a href="datenschutz.html">Datenschutzerklärung</a> *
 </label>
 </div>
 
+<!-- Absenden-Button -->
 <button type="submit">Kostenlos Anfrage</button>
 </form>
+
 
 <div class="partner">
 <strong>Meine starken Partner:</strong>
