@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Willkommen auf meiner Seite</title>
+<style>
+body {font-family: Arial; text-align: center; padding: 50px; background: #f0f8ff; color: #333;}
+h1 {font-size: 3em; color: #0066cc;}
+p {font-size: 1.3em;}
+a {color: #0066cc; text-decoration: none;}
+</style>
+</head>
+<body>
+<h1>🎉 Hallo Welt!</h1>
+<p>Dies ist meine eigene Domain<br><b>meine-seite.de</b></p>
+<p>100 % kostenlos mit GitHub Pages</p>
+<p><a href="https://github.com">Made with ❤️ auf GitHub</a></p>
+</body>
+</html>
