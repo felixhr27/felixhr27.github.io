@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Felix Hänßler-Rott – Baufi-Experte LBS Süd</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:system-ui,sans-serif; background:#fff; color:#333; line-height:1.5; }
+.c { max-width:480px; margin:0 auto; }
+header { background:#E2001A; color:#fff; padding:25px 15px; text-align:center; }
+h1 { font-size:1.9rem; }
+.sub { font-size:1.1rem; margin-top:8px; opacity:0.95; }
+main { padding:30px 20px; }
+.box { background:#E2001A; color:#fff; padding:20px; border-radius:12px; text-align:center; font-weight:bold; font-size:1.2rem; margin-bottom:25px; }
+.partner { background:#f8f8f8; padding:20px; border-radius:12px; text-align:center; margin:25px 0; }
+.partner a { display:block; color:#E2001A; font-weight:bold; font-size:1.1rem; margin:12px 0; text-decoration:underline; }
+h2 { color:#E2001A; font-size:1.5rem; margin:35px 0 20px; text-align:center; }
+input, textarea { width:100%; padding:14px; margin:8px 0; border:2px solid #ddd; border-radius:8px; font-size:1rem; }
+input:focus, textarea:focus { border-color:#E2001A; outline:none; }
+.check { display:flex; gap:10px; align-items:flex-start; font-size:0.95rem; margin:20px 0; }
+button { background:#E2001A; color:#fff; border:none; padding:16px; width:100%; border-radius:8px; font-size:1.3rem; cursor:pointer; }
+footer { background:#4D4F53; color:#fff; padding:20px; text-align:center; font-size:0.9rem; }
+footer a { color:#fff; text-decoration:underline; }
+.wa { position:fixed; bottom:20px; right:20px; background:#25D366; color:#fff; width:64px; height:64px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:36px; box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:999; }
+.bar { position:fixed; bottom:94px; left:0; width:100%; background:rgba(0,0,0,0.85); color:#fff; padding:12px; text-align:center; font-size:1rem; z-index:998; }
+.bar a { color:#fff; margin:0 12px; }
+</style>
+</head>
+<body>
+<div class="c">
+<header>
+<h1>Felix Hänßler-Rott</h1>
+<div class="sub">Ihr Baufi-Profi bei der LBS Süd</div>
+</header>
 
+<main>
+<div class="box">
+Direkter Draht zu Sparkassen, L-Bank & KfW<br>
+<strong>Beste Konditionen für Ihre Immobilie!</strong>
+</div>
+
+<div class="partner">
+<strong>Meine Partner:</strong><br>
+<a href="https://www.lbs-sued.de" target="_blank">LBS Süd</a>
+<a href="https://www.l-bank.de" target="_blank">L-Bank</a>
+<a href="https://www.kfw.de" target="_blank">KfW</a>
+</div>
+
+<h2>Jetzt Angebot anfordern!</h2>
+
+<form action="https://formspree.io/f/myzdjpjw" method="POST">
+<input type="text" name="name" placeholder="Name *" required>
+<input type="tel" name="telefon" placeholder="Telefon *" required>
+<input type="email" name="email" placeholder="E-Mail *" required>
+<input type="url" name="expose" placeholder="Exposé-Link (optional)">
+<textarea name="nachricht" rows="3" placeholder="Ihre Nachricht (optional)"></textarea>
+
+<div class="check">
+<input type="checkbox" id="ds" required>
+<label for="ds">Ich akzeptiere die <a href="datenschutz.html" style="color:#E2001A;">Datenschutzerklärung</a> *</label>
+</div>
+
+<button type="submit">Kostenloses Angebot →</button>
+</form>
+</main>
+
+<footer>
+<a href="impressum.html">Impressum</a> |
+<a href="datenschutz.html">Datenschutz</a>
+<p style="margin-top:12px; font-size:0.8rem; opacity:0.8;">
+§ 34i GewO – Darlehensvermittler im Auftrag der LBS Süd<br>
+Registernr. D-W-209-3QJ-63
+</p>
+</footer>
+</div>
+
+<a href="https://wa.me/4915162703591?text=Hallo%20Felix,%20ich%20brauche%20ein%20Baufi-Angebot!" class="wa" target="_blank">WhatsApp</a>
+
+<div class="bar">
+<a href="tel:015162703591">01516 2703591</a> |
+<a href="mailto:info@meine-baufi.com">E-Mail</a>
+</div>
+</body>
+</html>
